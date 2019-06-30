@@ -1,0 +1,21 @@
+{
+  "name": "Gjirafa Video AdBlocker",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Ad Blocker For Gjirafa Video",
+  "homepage_url": "https://github.com/ermalism",
+  "browser_action": {
+    "default_title": "Gjirafa Video AdBlocker"
+  },
+  "content_scripts": [
+    {
+        "matches": ["*://*.gjirafa.com/*"],
+        "js": ["contentscript.js"]
+    }
+   ],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
