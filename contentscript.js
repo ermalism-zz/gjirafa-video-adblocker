@@ -12,7 +12,7 @@ function removeAd() {
 }
 
 function checkForAdRemoval() {
-	if(adPlatformEvents.active || adPlatformEvents.requesting) {
+	if(typeof adPlatformEvents !== 'undefined' && (adPlatformEvents.active || adPlatformEvents.requesting)) {
         console.log("remove ad");
 		removeAd();
 	}
