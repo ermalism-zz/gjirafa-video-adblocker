@@ -1,21 +1,29 @@
 {
   "name": "Gjirafa Video AdBlocker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
-  "description": "Ad Blocker For Gjirafa Video",
+  "description": "AdBlocker for Gjirafa Video",
   "homepage_url": "https://github.com/ermalism",
   "browser_action": {
     "default_title": "Gjirafa Video AdBlocker"
   },
+  "icons": {
+    "16": "icon16.png",
+    "19": "icon19.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
-        "matches": ["*://*.gjirafa.com/*"],
-        "js": ["contentscript.js"]
+      "matches": [
+        "*://*.gjirafa.com/*"
+      ],
+      "js": [
+        "contentscript.js"
+      ]
     }
-   ],
+  ],
   "permissions": [
-    "https://*/*",
-    "http://*/*",
-    "tabs"
+    "*://*.gjirafa.com/*"
   ]
 }
