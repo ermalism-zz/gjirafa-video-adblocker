@@ -7,8 +7,11 @@ function removeAd() {
     adPlatformEvents.active = !1;
     document.querySelector("#play-embed") && (document.querySelector("#play-embed").style.display = "block");
     unmuteOverlay.style.visibility = "visible";
-    videoEvents.loadAjaxComponents()
-    videoEvents.play()
+    try {
+        videoPlayer.play()
+    } catch (n) {
+        videoEvents.loadAjaxComponents()
+    }
 }
 
 function checkForAdRemoval() {
