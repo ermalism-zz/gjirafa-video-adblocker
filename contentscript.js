@@ -34,5 +34,8 @@ mutationObserver.observe(document.documentElement, {
   attributeOldValue: true,
   characterDataOldValue: true
 });
+
+document.querySelectorAll('.product-ad-wrapper').forEach((e)=> {e.remove()})
+document.querySelectorAll('.sqaure-mobile-ad').forEach((e)=> {e.remove()})
 `;
 document.body.appendChild(div);
