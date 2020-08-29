@@ -37,5 +37,6 @@ mutationObserver.observe(document.documentElement, {
 
 document.querySelectorAll('.product-ad-wrapper').forEach((e)=> {e.remove()})
 document.querySelectorAll('.sqaure-mobile-ad').forEach((e)=> {e.remove()})
+document.querySelectorAll('.an-holder').forEach((e)=> {e.remove()})
 `;
 document.body.appendChild(div);
